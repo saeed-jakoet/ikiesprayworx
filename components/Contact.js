@@ -1,20 +1,51 @@
-import React from 'react'
+import React from 'react';
 
 const Contact = () => {
     return (
-        <div className='max-w-[1240px] m-auto p-4 h-screen'>
-            <h1 className='text-2xl font-bold text-center p-4'>Let's work together</h1>
-            <form className='max-w-[600px] m-auto'>
-                <div className='grid grid-cols-2 gap-2'>
-                    <input className='border shadow-lg p-3' type="text" placeholder='Name' />
-                    <input className='border shadow-lg p-3' type="email" placeholder='Email' />
+        <div id="contact" className='max-w-[500px] mx-auto py-16 px-4'>
+            <h1 className='text-2xl sm:text-3xl font-bold text-center mb-6 text-white'>Let's Work
+                Together</h1>
+            <form className='max-w-[600px] w-full mx-auto bg-white shadow-xl rounded-lg p-6 sm:p-8'>
+                <div className='flex flex-wrap -mx-3 mb-6'>
+                    <div className='w-full md:w-1/2 px-3 mb-6 md:mb-0'>
+                        <input
+                            className='appearance-none block w-full bg-gray-50 text-gray-700 border border-gray-300 rounded-lg py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500'
+                            type="text"
+                            placeholder='Name'
+                        />
+                    </div>
+                    <div className='w-full md:w-1/2 px-3'>
+                        <input
+                            className='appearance-none block w-full bg-gray-50 text-gray-700 border border-gray-300 rounded-lg py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500'
+                            type="email"
+                            placeholder='Email'
+                        />
+                    </div>
                 </div>
-                <input className='border shadow-lg p-3 w-full my-2' type="text" placeholder='Subject' />
-                <textarea className='border shadow-lg p-3 w-full' cols="30" rows="10" placeholder='Message'></textarea>
-                <button className='border shadow-lg p-3 w-full mt-2'>Submit</button>
+                <div className='mb-6'>
+                    <input
+                        className='appearance-none block w-full bg-gray-50 text-gray-700 border border-gray-300 rounded-lg py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500'
+                        type="text"
+                        placeholder='Subject'
+                    />
+                </div>
+                <div className='mb-6'>
+                    <textarea
+                        className='appearance-none block w-full bg-gray-50 text-gray-700 border border-gray-300 rounded-lg py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500'
+                        cols="30"
+                        rows="10"
+                        placeholder='Message'
+                    ></textarea>
+                </div>
+                <button
+                    className='w-full py-3 bg-custom-orange text-white rounded-lg hover:bg-blue-700 transition-colors duration-300'
+                    type="submit"
+                >
+                    Submit
+                </button>
             </form>
         </div>
     )
 }
 
-export default Contact
+export default Contact;
