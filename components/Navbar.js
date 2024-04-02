@@ -38,10 +38,13 @@ const Navbar = () => {
                 </div>
                 <ul style={{color: `${textColor}`}} className='hidden sm:flex'>
                     <li className='p-4'>
-                        <Link href='/'>Services</Link>
+                        <Link href='/'>Home</Link>
                     </li>
                     <li className='p-4'>
-                        <Link href='/'>Gallery</Link>
+                        <Link href='/services'>Services</Link>
+                    </li>
+                    <li className='p-4'>
+                        <Link href='/work'>Gallery</Link>
                     </li>
                     <li className='p-4'>
                         <Link href='/contact'>Contact</Link>
