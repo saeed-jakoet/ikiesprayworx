@@ -48,19 +48,19 @@ const Navbar = () => {
                 <ul style={{color: `${textColor}`}} className='hidden sm:flex'>
                     <li className='p-4 cursor-pointer'>
                         <ScrollLink to='home' smooth={true} duration={500}
-                                    className='hover:underline hover:text-white'>Home</ScrollLink>
+                                    className='hover:underline '>Home</ScrollLink>
                     </li>
                     <li className='p-4 cursor-pointer'>
                         <ScrollLink to='services' smooth={true} duration={500}
-                                    className='hover:underline hover:text-white'>Services</ScrollLink>
+                                    className='hover:underline'>Services</ScrollLink>
                     </li>
                     <li className='p-4 cursor-pointer'>
                         <ScrollLink to='gallery' smooth={true} duration={500}
-                                    className='hover:underline hover:text-white'>Gallery</ScrollLink>
+                                    className='hover:underline '>Gallery</ScrollLink>
                     </li>
                     <li className='p-4 cursor-pointer'>
                         <ScrollLink to='contact' smooth={true} duration={500}
-                                    className='hover:underline hover:text-white'>Contact</ScrollLink>
+                                    className='hover:underline '>Contact</ScrollLink>
                     </li>
                 </ul>
 
