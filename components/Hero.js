@@ -1,5 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion'; // Import motion from Framer Motion library
+import { Link as ScrollLink } from 'react-scroll'; // Import ScrollLink from react-scroll
 
 const Hero = ({ heading, message }) => {
     return (
@@ -17,16 +18,30 @@ const Hero = ({ heading, message }) => {
                     initial={{ scale: 0.8 }} // Initial scale
                     animate={{ scale: 1 }} // Animation when component is mounted
                     transition={{ delay: 0.5, duration: 0.5, ease: "easeInOut" }} // Animation transition
-                    className='text-6xl md:text-8xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-br from-pink-500 to-yellow-300 animate-text tracking-tighter'>
+                    className='text-6xl md:text-8xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-gray-200 to-gray-400 animate-text tracking-tighter'>
                     {heading}
                 </motion.h1>
                 <motion.p
                     initial={{ opacity: 0 }} // Initial opacity
                     animate={{ opacity: 1 }} // Animation when component is mounted
                     transition={{ delay: 0.8, duration: 0.5, ease: "easeInOut" }} // Animation transition
-                    className='text-xl md:text-2xl max-w-md mb-8'>
+                    className='text-xl md:text-2xl max-w-lg mb-8'>
                     {message}
                 </motion.p>
+                <motion.div
+                    initial={{ opacity: 0, scale: 0.9 }} // Initial opacity and scale
+                    animate={{ opacity: 1, scale: 1 }} // Animation when component is mounted
+                    transition={{ delay: 1, duration: 0.5, ease: "easeInOut" }} // Animation transition
+                    className='inline-block'>
+                    <ScrollLink
+                        to="services"
+                        smooth={true}
+                        duration={500}
+                        className='inline-block bg-gradient-to-r from-gray-700 to-gray-900 text-white py-3 px-6 rounded-full text-lg font-semibold shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition cursor-pointer'
+                    >
+                        Learn More
+                    </ScrollLink>
+                </motion.div>
             </motion.div>
         </div>
     );

@@ -50,10 +50,10 @@ const Navbar = () => {
                         <ScrollLink to='home' smooth={true} duration={500}
                                     className='hover:underline '>Home</ScrollLink>
                     </li>
-                    <li className='p-4 cursor-pointer'>
-                        <ScrollLink to='services' smooth={true} duration={500}
-                                    className='hover:underline'>Services</ScrollLink>
-                    </li>
+                    {/*<li className='p-4 cursor-pointer'>*/}
+                    {/*    <ScrollLink to='services' smooth={true} duration={500}*/}
+                    {/*                className='hover:underline'>Services</ScrollLink>*/}
+                    {/*</li>*/}
                     <li className='p-4 cursor-pointer'>
                         <ScrollLink to='gallery' smooth={true} duration={500}
                                     className='hover:underline '>Gallery</ScrollLink>
